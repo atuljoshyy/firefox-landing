@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Mozilla Firefox Club</title>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="/index.html" class="nav__logo" style="padding-top:45px;"><img src="assets/img/firefox-logo.png" alt=""></a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#about" class="nav__link">About us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#what-we-do" class="nav__link">What we do</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link active-link">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#team" class="nav__link">Team</a>
+                    </li>
+
+                    <i class='bx bx-toggle-left change-theme' id="theme-button"></i>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--=============== BLOG ===============-->
+    <section class="what-we-do section container" id="blog">
+        <h2 class="section__title">Blog Posts</h2>
+
+
+        <!-- Control buttons -->
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('Machine Learning')"> Machine Learning</button>
+            <button class="btn" onclick="filterSelection('Web Development')"> Web Development</button>
+            <button class="btn" onclick="filterSelection('Artificial Intelligence')"> Artificial Intelligence</button>
+            <button class="btn" onclick="filterSelection('Soft Skills')"> Soft Skills</button>
+        </div>
+        <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+        <div class="container what-we-do__container grid">
+            <div class="filterDiv Machine Learning">
+
+
+                <div class="what-we-do__data">
+                    <h3 class="what-we-do__subtitle blog_post">Introduction to ML</h3>
+                    <p class="what-we-do__description blog_post">You must have heard people talking about Machine
+                        Learning models and its various algorithms...</p>
+                    <a href="https://medium.com/mozilla-firefox-club/introduction-to-ml-linear-regression-from-scratch-5010cc00a839"
+                        target="_blank">
+                        <p class="what-we-do__description blog_desc blog_post read_more_btn">Read More</p>
+                    </a>
+                    <p class="what-we-do__blog_post_category blog_tags ">Machine Learning</p>
+                </div>
+
+
+
+            </div>
+            <div class="filterDiv Web Development">
+
+
+                <div class="what-we-do__data">
+
+                    <h3 class="what-we-do__subtitle blog_post">Introduction to ML</h3>
+                    <p class="what-we-do__description blog_post">You must have heard people talking about Machine
+                        Learning models and its various algorithms...</p>
+                    <a href="https://medium.com/mozilla-firefox-club/introduction-to-ml-linear-regression-from-scratch-5010cc00a839"
+                        target="_blank">
+                        <p class="what-we-do__description blog_desc blog_post read_more_btn">Read More</p>
+                    </a>
+                    <p class="what-we-do__blog_post_category blog_tags ">Web Development</p>
+                </div>
+
+            </div>
+            <div class="filterDiv Artificial Intelligence">
+
+
+                <div class="what-we-do__data">
+                    <h3 class="what-we-do__subtitle blog_post">Introduction to ML</h3>
+                    <p class="what-we-do__description blog_post">You must have heard people talking about Machine
+                        Learning models and its various algorithms...</p>
+                    <a href="https://medium.com/mozilla-firefox-club/introduction-to-ml-linear-regression-from-scratch-5010cc00a839"
+                        target="_blank">
+                        <p class="what-we-do__description blog_desc blog_post read_more_btn">Read More</p>
+                    </p>
+                    <p class="what-we-do__blog_post_category blog_tags ">Artificial Intelligence
+
+                    </a>
+
+                </div>
+                
+
+            </div>
+
+            <!-- this is just so that we have a 3X3 grid for the layout and can be removed later -->
+
+            <div class="filterDiv Machine Learning">
+
+
+                <div class="what-we-do__data">
+                    <h3 class="what-we-do__subtitle blog_post">Introduction to ML</h3>
+                    <p class="what-we-do__description blog_post">You must have heard people talking about Machine
+                        Learning models and its various algorithms...</p>
+                    <a href="https://medium.com/mozilla-firefox-club/introduction-to-ml-linear-regression-from-scratch-5010cc00a839"
+                        target="_blank">
+                        <p class="what-we-do__description blog_desc blog_post read_more_btn">Read More</p>
+                    </a>
+                    <p class="what-we-do__blog_post_category blog_tags ">Machine Learning</p>
+                </div>
+
+
+
+            </div>
+            <div class="filterDiv Web Development">
+
+
+                <div class="what-we-do__data">
+
+                    <h3 class="what-we-do__subtitle blog_post">Introduction to ML</h3>
+                    <p class="what-we-do__description blog_post">You must have heard people talking about Machine
+                        Learning models and its various algorithms...</p>
+                    <a href="https://medium.com/mozilla-firefox-club/introduction-to-ml-linear-regression-from-scratch-5010cc00a839"
+                        target="_blank">
+                        <p class="what-we-do__description blog_desc blog_post read_more_btn">Read More</p>
+                    </a>
+                    <p class="what-we-do__blog_post_category blog_tags ">Web Development</p>
+                </div>
+
+            </div>
+            <div class="filterDiv Artificial Intelligence">
+
+
+                <div class="what-we-do__data">
+                    <h3 class="what-we-do__subtitle blog_post">Introduction to ML</h3>
+                    <p class="what-we-do__description blog_post">You must have heard people talking about Machine
+                        Learning models and its various algorithms...</p>
+                    <a href="https://medium.com/mozilla-firefox-club/introduction-to-ml-linear-regression-from-scratch-5010cc00a839"
+                        target="_blank">
+                        <p class="what-we-do__description blog_desc blog_post read_more_btn">Read More</p>
+                    </p>
+                    <p class="what-we-do__blog_post_category blog_tags ">Artificial Intelligence
+
+                    </a>
+
+                </div>
+                
+
+            </div>
+
+            <div class="filterDiv Machine Learning">
+
+
+                <div class="what-we-do__data">
+                    <h3 class="what-we-do__subtitle blog_post">Introduction to ML</h3>
+                    <p class="what-we-do__description blog_post">You must have heard people talking about Machine
+                        Learning models and its various algorithms...</p>
+                    <a href="https://medium.com/mozilla-firefox-club/introduction-to-ml-linear-regression-from-scratch-5010cc00a839"
+                        target="_blank">
+                        <p class="what-we-do__description blog_desc blog_post read_more_btn">Read More</p>
+                    </a>
+                    <p class="what-we-do__blog_post_category blog_tags ">Machine Learning</p>
+                </div>
+
+
+
+            </div>
+            <div class="filterDiv Web Development">
+
+
+                <div class="what-we-do__data">
+
+                    <h3 class="what-we-do__subtitle blog_post">Introduction to ML</h3>
+                    <p class="what-we-do__description blog_post">You must have heard people talking about Machine
+                        Learning models and its various algorithms...</p>
+                    <a href="https://medium.com/mozilla-firefox-club/introduction-to-ml-linear-regression-from-scratch-5010cc00a839"
+                        target="_blank">
+                        <p class="what-we-do__description blog_desc blog_post read_more_btn">Read More</p>
+                    </a>
+                    <p class="what-we-do__blog_post_category blog_tags ">Web Development</p>
+                </div>
+
+            </div>
+            <div class="filterDiv Artificial Intelligence">
+
+
+                <div class="what-we-do__data">
+                    <h3 class="what-we-do__subtitle blog_post">Introduction to ML</h3>
+                    <p class="what-we-do__description blog_post">You must have heard people talking about Machine
+                        Learning models and its various algorithms...</p>
+                    <a href="https://medium.com/mozilla-firefox-club/introduction-to-ml-linear-regression-from-scratch-5010cc00a839"
+                        target="_blank">
+                        <p class="what-we-do__description blog_desc blog_post read_more_btn">Read More</p>
+                    </p>
+                    <p class="what-we-do__blog_post_category blog_tags ">Artificial Intelligence
+
+                    </a>
+
+                </div>
+                
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo"><img src="./assets/img/firefox-logo.png" alt=""></a>
+
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Site Map</h3>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Home</a></li>
+                    <li><a href="#" class="footer__link">About</a></li>
+                    <li><a href="#" class="footer__link">What we do</a></li>
+
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Our Club</h3>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Blog</a></li>
+                    <li><a href="#" class="footer__link">Team</a></li>
+                    <li><a href="#" class="footer__link">Get in touch</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Community</h3>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Support</a></li>
+                    <li><a href="#" class="footer__link">Questions</a></li>
+                    <li><a href="#" class="footer__link">help</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__social">
+                <a href="#" class="footer__social-link"><i class='bx bxl-facebook-circle '></i></a>
+                <a href="#" class="footer__social-link"><i class='bx bxl-twitter'></i></a>
+                <a href="#" class="footer__social-link"><i class='bx bxl-instagram-alt'></i></a>
+            </div>
+        </div>
+
+        <p class="footer__copy">&#169; Mozilla Firefox Club VIT Bhopal. All right reserved</p>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+    </a>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
